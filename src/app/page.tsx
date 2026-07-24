@@ -239,7 +239,7 @@ export default function Home() {
           </div>
           <Link className="all-work-link" href="/work">
             <span>View all work</span>
-            <strong>14 projects</strong>
+            <strong>{allProjects.length} projects</strong>
             <i aria-hidden="true">↗</i>
           </Link>
         </section>

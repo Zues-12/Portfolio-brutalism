@@ -194,4 +194,30 @@ export const projects: Project[] = [
     summary:
       "A wholesale commerce experience providing a direct route from product browsing to purchase.",
   },
+  {
+    number: "15",
+    title: "TapSNDR",
+    category: "Platforms",
+    services: "Secure file sharing / Web3 / Analytics",
+    domain: "tapsndr.com",
+    liveUrl: "https://tapsndr.com/",
+    slug: "tapsndr",
+    color: "yellow",
+    hasDetails: true,
+    summary:
+      "An invite-only secure file-sharing platform combining end-to-end encryption, decentralized routing, access controls, analytics, and an immutable audit trail.",
+  },
+  {
+    number: "16",
+    title: "Tap Arcadia",
+    category: "Platforms",
+    services: "Digital platform / Web experience",
+    domain: "taparcadia.com",
+    liveUrl: "https://taparcadia.com/",
+    slug: "tap-arcadia",
+    color: "green",
+    hasDetails: true,
+    summary:
+      "A digital platform and web experience created for Tap Arcadia.",
+  },
 ];

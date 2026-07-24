@@ -67,7 +67,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className="case-hero__meta">
             <p>{project.category}</p>
             <p>{project.services}</p>
-            <p>{project.number} / 14</p>
+            <p>{project.number} / {projects.length}</p>
           </div>
           <h1>{project.title}</h1>
           <span className="case-hero__shape" aria-hidden="true" />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { projects } from "@/data/projects";
 import ProjectArchive from "./project-archive";
 
 export const metadata: Metadata = {
@@ -38,7 +39,7 @@ export default function WorkPage() {
       <main id="work-content">
         <section className="work-hero" aria-labelledby="work-page-title">
           <div className="work-hero__top">
-          <p>Archive / 14 selected launches</p>
+          <p>Archive / {projects.length} selected launches</p>
             <p>
               Digital products, platforms,
               <br />
@@ -52,7 +53,7 @@ export default function WorkPage() {
             <span>®</span>
           </h1>
           <div className="work-hero__bottom">
-            <span>(14)</span>
+            <span>({projects.length})</span>
             <p>
               A growing collection of collaborations for people building
               what&apos;s next.
