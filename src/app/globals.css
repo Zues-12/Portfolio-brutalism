@@ -1698,7 +1698,7 @@ footer a:hover {
 
   .hero h1 {
     margin: 5rem 0 3rem;
-    font-size: clamp(3.7rem, 17.5vw, 6.2rem);
+    font-size: clamp(3.3rem, 15.5vw, 5.8rem);
     line-height: 0.77;
   }
 
@@ -1751,6 +1751,7 @@ footer a:hover {
     right: 0.75rem;
     bottom: 0.75rem;
     left: 0.75rem;
+    flex-wrap: wrap;
   }
 
   .project-buttons a {
@@ -1798,7 +1799,7 @@ footer a:hover {
   }
 
   .contact h2 {
-    font-size: clamp(3.4rem, 16vw, 6rem);
+    font-size: clamp(3.1rem, 14.5vw, 5.6rem);
     line-height: 0.78;
   }
 
@@ -1822,9 +1823,10 @@ footer a:hover {
   }
 
   .work-hero h1 {
+    width: 100%;
     margin-block: auto;
-    font-size: clamp(4.4rem, 23vw, 8rem);
-    line-height: 0.7;
+    font-size: clamp(3.8rem, 18vw, 7rem);
+    line-height: 0.72;
   }
 
   .work-hero__bottom {
@@ -1857,7 +1859,8 @@ footer a:hover {
   }
 
   .archive-poster__title {
-    font-size: clamp(2.9rem, 15vw, 5.5rem);
+    overflow-wrap: anywhere;
+    font-size: clamp(2.5rem, 12vw, 4.8rem);
   }
 
   .work-cta {
@@ -1877,8 +1880,11 @@ footer a:hover {
   }
 
   .case-hero h1 {
+    max-width: 100%;
     margin-block: 5rem 3rem;
-    font-size: clamp(4.4rem, 22vw, 8rem);
+    overflow-wrap: anywhere;
+    font-size: clamp(3.7rem, 17vw, 7rem);
+    line-height: 0.72;
   }
 
   .case-hero__shape {
@@ -1907,6 +1913,78 @@ footer a:hover {
   .case-facts div {
     grid-template-columns: 6rem 1fr;
     gap: 1rem;
+  }
+
+  .case-facts dd {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .next-project > a {
+    font-size: clamp(2.7rem, 13vw, 5.5rem);
+  }
+
+  .next-project > a span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header,
+  .section-pad,
+  footer {
+    padding-inline: 1rem;
+  }
+
+  .site-header nav {
+    gap: 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  .hero,
+  .work-hero,
+  .case-hero {
+    padding-inline: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 14.5vw;
+  }
+
+  .hero__badge {
+    right: 0.75rem;
+    width: 4.2rem;
+  }
+
+  .project-buttons a {
+    padding-inline: 0.62rem;
+    font-size: 0.52rem;
+  }
+
+  .archive-card__info {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-card__year,
+  .archive-card__services {
+    grid-column: 1;
+    grid-row: auto;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .work-hero__bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .work-hero__bottom > span:last-child {
+    display: none;
+  }
+
+  .contact__details {
+    right: 1rem;
+    left: 1rem;
   }
 }
 
